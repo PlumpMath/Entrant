@@ -1,5 +1,5 @@
-# Electron-React-Boilerplate
-Electron app with React.js
+# Entrant - Fit Entry check-in app
+
 
 ![](./docs/screenshot.png)
 # How to develop
@@ -9,7 +9,5 @@ Electron app with React.js
 4. add some react components and styles
 5. reload application (⌘+R)
 
-# Electron api calling
-To call Electron's api, it is necessary to use window.require because, browserify rewrites require statement.
+# built on Electron
 
-ex) `var remote = window.require( 'remote' );`
