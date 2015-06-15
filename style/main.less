@@ -1,9 +1,150 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
 body {
-	font-family: Helvetica, arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.6;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: white;
-	padding: 30px;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #2D4D6B;
+
+  color: #B0C3D6;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0 0 .4em;
+  padding: 0;
+  font-weight: bold;
+  font-size: 2em;
+  color: #fff;
+}
+h2 {
+  margin: 0 0 .4em;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button, input[type="button"] {
+  cursor: pointer;
+
+  background-color: #efefef;
+  border: 1px solid #000;
+  border-radius: .5em;
+  padding: .5em .8em;
+
+  font-weight: bold;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+@keyframes fade-away {
+  from {opacity: 1;}
+  to   {opacity: 0;}
+}
+
+@-webkit-keyframes fade-away {
+  from {opacity: 1;}
+  to   {opacity: 0;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flash-message {
+  position: absolute;
+  width: 100%;
+  padding: 30px 35px;
+  background-color: rgba(180, 180, 180, 0.8);
+  top: 0;
+  left: 0;
+}
+
+.initial-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-actions {
+  width: 100%;
+  flex-grow: .7;
+
+  button {
+    font-size: 1.5em;
+    width: 80%;
+    max-width: 500px;
+  }
+}
+
+.check-in-welcome {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+
+.check-in-display {
+  height: 70vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.member-avatar {
+  height: 50%;
+  transition: opacity 2s;
+}
+
+.check-in-input {
+  margin: 15px auto;
+  max-width: 800px;
+  height: 30vh;
+  background-color: #efefef;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  padding: 15px;
+}
+
+.NumbersDisplay {
+  display: flex;
+  flex-direction: row;
+}
+
+.NumbersDisplay > div {
+  flex-grow: 1;
+}
+
+.CheckInDisplay {
+  height: 100%;
+  text-align: center;
+  padding: 15px;
+
+  animation: fade-away 0.5s 1;
+  -webkit-animation: fade-away 0.5s 1;
+
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+.CheckInDisplay img {
+  box-shadow: ;
+  -webkit-box-shadow: -15px 10px 61px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: -15px 10px 61px -18px rgba(0,0,0,0.75);
+  box-shadow: -15px 10px 61px -18px rgba(0,0,0,0.75);
+  border: 5px solid rgba(255, 255, 255, 0.1);
 }
