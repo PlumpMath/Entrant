@@ -6,8 +6,8 @@ gulp.task( 'atom', function () {
 		srcPath: './compile',
 		releasePath: './build',
 		cachePath: './cache',
-		version: 'v0.27.0',
+		version: 'v0.28.1',
 		rebuild: false,
-		platforms: [ 'darwin-x64' ]
+		platforms: ['darwin-x64']
 	} );
 } );
